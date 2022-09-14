@@ -31,7 +31,7 @@ const CreateProduct = () => {
                 errorArr.push(errorResponse[key].message)
             }
             setErrors(errorArr);
-        })
+        }, [])
     }
 
     return (

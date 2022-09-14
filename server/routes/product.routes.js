@@ -12,5 +12,8 @@ module.exports = (app) => {
     app.get('/api/product/:id', ProductController.findOneProduct);
 
 //------------------------------UPDATE----------------------------------
+    app.put('/api/product/update/:id', ProductController.updateProduct);
+
 //------------------------------DELETE----------------------------------
+    app.delete('/api/product/delete/:id', ProductController.deleteProduct);
 }
