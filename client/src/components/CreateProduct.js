@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import AllProducts from './AllProducts'
 
 const CreateProduct = () => {
 
@@ -35,7 +36,7 @@ const CreateProduct = () => {
 
     return (
         <div className='container'>
-            <h1>create product</h1>
+            <h1>Product Manager</h1>
             <form className='form-control' onSubmit={submitHandler}>
                 <div className='mb-3 d-flex form-control'>
                     <label className=''>Title:</label>
@@ -53,6 +54,8 @@ const CreateProduct = () => {
                     <input type='submit' value='submit'/>
                 </div>
             </form>
+            <div className='border border-dark border-3'></div>
+            <AllProducts></AllProducts>
         </div>
     )
 }

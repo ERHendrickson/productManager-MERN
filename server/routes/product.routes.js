@@ -9,7 +9,7 @@ module.exports = (app) => {
     app.get('/api/products', ProductController.showAllProducts);
 
 //------------------------------DISPLAY ONE-----------------------------
-    app.get('/api/product/:id')
+    app.get('/api/product/:id', ProductController.findOneProduct);
 
 //------------------------------UPDATE----------------------------------
 //------------------------------DELETE----------------------------------
