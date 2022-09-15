@@ -20,7 +20,7 @@ const ShowProduct = () => {
             setProductInfo(response.data.results)
         })
         .catch((err) => console.log("Show page get request error: ", err))
-    })
+    },[id])
 
     return (
         <div className='container'>

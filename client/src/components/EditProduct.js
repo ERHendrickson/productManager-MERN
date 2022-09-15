@@ -45,7 +45,7 @@ const EditProduct = () => {
         axios.delete(`http://localhost:8000/api/product/delete/${id}`)
         .then((response) => {
             console.log('delete was successful', response)
-            setDeleteToggle(!setDeleteToggle)
+            setDeleteToggle(!deleteToggle)
         })
         .catch((err) => console.log('something wrong deleting', err))
     }
